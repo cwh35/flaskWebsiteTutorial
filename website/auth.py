@@ -2,7 +2,7 @@ from flask import Blueprint
 
 auth = Blueprint('auth', __name__)
 
-# defining login, logout, and sign up route
+# defining login, logout, and sign up routes & URLs
 @auth.route('/login')
 def login():
     return "<p>Login</p>"
