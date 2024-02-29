@@ -1,0 +1,1 @@
+# Used to store the URL endpoints for the frontend part of the website
