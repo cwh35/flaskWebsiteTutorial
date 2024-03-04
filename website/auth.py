@@ -27,7 +27,7 @@ def login():
             flash('Email does not exist.', category='error')
     # you can pass variables to your templates that show up on the website
     # example, text="testing" will show up on the login page
-    return render_template("login.html")
+    return render_template("login.html", user=current_user)
 
 @auth.route('/logout')
 @login_required
@@ -65,4 +65,4 @@ def sign_up():
             flash("Account has been created!", category='success')
             return redirect(url_for('views.home'))
 
-    return render_template("sign_up.html")
+    return render_template("sign_up.html", user=current_user)
